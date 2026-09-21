@@ -1,0 +1,102 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sansita", sans-serif;
+}
+
+header {
+  background-color: blue;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+#course_title {
+
+  font-size: 1.2rem;
+
+
+}
+
+
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+}
+#menu{
+    font-size: 1.8rem;
+    background-color: none;
+    color: white;
+    cursor: pointer;
+}
+#menu::before{
+    content: "≣";
+}
+#menu.open::before{
+    content: "✕";
+}
+nav {
+  background-color: blue;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+nav.open{
+    display: block;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #eee;
+  color: black;
+}
+figure {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+figcaption {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+footer {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 30px;
+}
