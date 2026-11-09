@@ -1,4 +1,4 @@
-/* Reset defaults */
+
 * {
   margin: 0;
   padding: 0;
@@ -40,15 +40,18 @@ nav a:hover {
 
 /* Main content */
 main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 20px;
+  display: grid;
+  grid-auto-columns: 2fr 2fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h1 {
+main h1 {
   text-align: center;
   margin-bottom: 1rem;
   color: #004080;
+  grid-column: 1 / -1;
 }
 
 h2, h3 {
@@ -96,4 +99,43 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 30px;
+}
+.about-me{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.about-me h2{
+  width: 100%;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+
+}
+.about-me p {
+  flex: 1;
+  width: 150px;
+}
+.about-me img {
+  width: 150px;
+  height: auto;
+}
+.country {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.country h2 {
+  width: 100%;
+  margin-bottom: 0;
+}
+.country p {
+  flex: 1;
+}
+.country img {
+  width: 150px;
+  height: auto;
+  order: 2;
 }
